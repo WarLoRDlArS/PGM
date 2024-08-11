@@ -1,6 +1,7 @@
 import random as rand
 
 def select_card():
+    """Select a Card from the Deck of 52 Cards(No Jokers included)."""
     colors = ['red', 'black']
     card_types_all = [['clubs', 'spades'], ['diamonds', 'hearts']] 
     card_color = rand.choice(colors)
@@ -17,7 +18,10 @@ def select_card():
     return card_color, card_type, rand.choice(card)
 
 
-def simulate_card_draw(iterations:int = 100) -> None:
+def simulate_card_draw(iterations = 100):
+    """Simulate the drawing of a random card for the given iterations."""
+
+    # count of the number of cards
     no_of_black = 0
     no_of_red = 0 
 
