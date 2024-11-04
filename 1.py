@@ -34,7 +34,7 @@ def simulate_card_draw(iterations = 100):
         if (i % (iterations / 10)) == 0:
             print(f"Iteration: {i} \t {color} Card Selected : {card_type}, {card}")
     
-    print(f"Propertrion of Red Cards: {no_of_red / iterations}\nPropertion of Black Cards: {no_of_black / iterations}")
+    print(f"Proportion of Red Cards: {no_of_red / iterations}\nProportion of Black Cards: {no_of_black / iterations}")
     
     print(f"\nThe Ratio of Black to Red Cards is {no_of_black / no_of_red}\n")
 

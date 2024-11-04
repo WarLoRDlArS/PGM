@@ -6,16 +6,16 @@ import numpy as np
 def simulate_student_data():
     with open("student_data.csv", "wt") as f:
         # f.write(f"attendence, grade, pass_percentage,\n")
-        for i in range(100):
+        for i in range(1000):
             attendence = rand.uniform(0.0, 100.0)
             grade = rand.uniform(0.0, 100.0)
-            pass_percent = 1 if grade >= 35.0 else 0
+            pass_percent = 1 if grade >= 40.0 else 0
             
             f.write(f"{attendence:.{3}f}, {grade:.{3}f}, {pass_percent}\n")
 
 
 def probability():
-    data = pd.read_csv("student_data.csv")
+    # data = pd.read_csv("student_data.csv")
     # print(data)
 
     grade, attendance, has_passed = [], [], []

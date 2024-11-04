@@ -6,7 +6,7 @@ def main():
     X = list(map(float, input("Enter Values of X: ").split()))
     P = list(map(float, input("Enter Values of P(X=x): ").split()))
 
-    if sum(P) > 1.0 or sum(P) < 1.0:
+    if sum(P) != 1.0:
         print("Probability Values exceed or does not sum up to 1.0!!")
         return
     
